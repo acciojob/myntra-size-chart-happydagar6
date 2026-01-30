@@ -1,2 +1,54 @@
 
 /* Your CSS Code here. */
+body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            /* Outer border similar to spreadsheet view */
+            border: 1px solid #d0d0d0;
+        }
+
+        th, td {
+            border: 1px solid black; /* Grid lines */
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        /* Alignment matches the image: Labels left, Numbers right */
+        th {
+            text-align: left;
+        }
+        td {
+            text-align: right;
+        }
+        td:first-child {
+            text-align: left; /* Row labels like "Waist" are left-aligned */
+        }
+
+        /* Header Row Styling (Dark Red background, White text) */
+        thead th {
+            background-color: #be4b48;
+            color: white;
+            font-weight: normal;
+        }
+
+        /* Data Row Styling */
+        /* Row 1: Waist (Medium Pink) */
+        .row-waist {
+            background-color: #e6b8b7;
+        }
+
+        /* Row 2: Chest (Light Pink) */
+        .row-chest {
+            background-color: #f2dcdb;
+        }
+
+        /* Row 3: Sleeve (Grey) */
+        .row-sleeve {
+            background-color: #d9d9d9;
+        }
